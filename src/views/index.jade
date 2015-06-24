@@ -1,0 +1,27 @@
+html
+
+	head
+		title To Do List Express
+		link(rel="stylesheet", href="/styles/style.css")
+
+	body
+		#container
+			h1 To Do List
+			if lists.length > 0
+				div#lists
+					ul#todolist
+						each list in lists
+							li.eachlist
+								span= list.task
+								form(method="POST", action="/hapuslist", id="hapusdatalist")
+									div.form-group
+										input#hapusdata(type="submit", value="Delete")
+
+			else
+				#nolist Belum ada data
+
+			form(method="POST", action="/tambahlist", id="tambahdatalist")
+				p Buat Data Baru
+				div.form-group
+					input#task(name="task", type="text", required="required")
+					input.btn(type="submit", value="Tambah")

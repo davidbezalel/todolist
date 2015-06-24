@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: calibri, helvetica, cambria, sans-serif;
+	font-size: 15px;
+}
+
+#container {
+	width: 960px;
+	margin: 20px auto;
+}
+
+#container h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#lists, #nolist {
+	width: 300px;
+	margin: 0 auto;
+}
+
+ul#todolist {
+	list-style-type: none;
+}
+
+ul#todolist li, #nolist {
+	padding: 7px 15px;	
+}
+
+ul#todolist li:nth-child(odd),
+#nolist {
+	background: #ccc;
+}
+
+form#tambahdatalist {
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+#task {
+	width: 230px;
+	padding: 5px 10px;
+	margin-right: 5px;
+}
+
+.btn {
+	background: #33FF77;
+	padding: 5px 10px;
+	border: 0;
+}
+
+#hapusdata {
+	background: none;
+	color: red;
+	border: 0;
+}
+
+form#hapusdatalist {
+	display: inline-block;
+	float: right;
+}
